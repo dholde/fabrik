@@ -43,6 +43,11 @@ every pull request.
   always use the `manage-skills` skill.
 - **Write without AI slop.** Whenever you write (chat replies, docs, specs,
   tickets, ADRs, commit messages, PR descriptions), follow the `no-ai-slop` skill.
+- **Disclose AI help with `Assisted-by`.** End every commit made with AI help
+  with `Assisted-by: <tool>` (e.g. `Claude Code`, `Codex`, `Cursor`); no model
+  name, no `Co-authored-by` for AI. A PR description ends with one
+  `Assisted-by` line per tool that appears in the branch's commits:
+  `git log main..HEAD --format='%(trailers:key=Assisted-by,valueonly)' | sort -u`.
 - Keep changes small and focused; one concern per change.
 - Do not commit secrets (`.env`, keys, `.claude/settings.local.json`).
 - When you add a doc or change how the project is structured, update the map
