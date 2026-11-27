@@ -5,4 +5,4 @@
 
 ## Changelog
 
-- None. Unchanged from source.
+- Reduced to writing rules only: removed edit/detect jobs, questions, workflow and `eval.md`; dropped draft-editing principles; reworded description and `agents/openai.yaml` to match.
