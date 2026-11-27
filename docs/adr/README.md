@@ -1,5 +1,7 @@
 # Architecture Decision Records
 
+Each ADR records one significant decision, its reasons and its consequences.
+
 One file per decision: `<NNNN>-<slug>.md`, numbered from `0001`.
 
 - Write one only for decisions that are hard to reverse, cross-cutting, or

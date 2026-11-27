@@ -1,5 +1,9 @@
 # Specs, tickets and plans
 
+Where specs, tickets and plans live, the metadata they carry, and how their
+status moves between agents and humans. The terms are defined in the
+[glossary](../GLOSSARY.md).
+
 ## Locations
 
 - **Specs:** `docs/specs/<feature-slug>/spec.md`
