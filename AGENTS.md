@@ -1,7 +1,7 @@
 # AGENTS.md
 
 Guidance for AI coding agents working in this repository. This file holds only
-always-on rules and a map. Read the file the map names before working in that
+working agreements and a map. Read the file the map names before working in that
 area.
 
 ## What Fabrik is
@@ -30,7 +30,7 @@ commands to build, test and lint here.
 Before committing, run `bash scripts/check-all.sh`. CI runs the same checks on
 every pull request.
 
-## Always-on rules
+## Working agreements
 
 - **One fact, one place.** Each fact lives in the file the map names for it.
   Other files link there instead of copying values. Never state in one file
