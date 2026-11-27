@@ -27,6 +27,9 @@ agents, and gates), and Fabrik runs it.
 No stack, build system or test suite yet. When you introduce one, add the
 commands to build, test and lint here.
 
+Before committing, run `bash scripts/check-consistency.sh`. CI runs it on every
+pull request.
+
 ## Always-on rules
 
 - **One fact, one place.** Each fact lives in the file the map names for it.
