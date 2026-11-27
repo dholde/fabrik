@@ -8,6 +8,12 @@ see the map in [AGENTS.md](../AGENTS.md).
 - **Spec**: A description of a feature (problem, solution, user stories, decisions).
 - **Ticket**: One tracer-bullet slice of work, small enough for a single agent session.
 - **Plan**: How an agent will implement one ticket (files, steps, tests), written before coding.
+- **Ticket branch**: The git branch that holds one ticket's code and status changes until the merge.
+- **Review round**: One pass of review over a ticket's work, ending in a verdict.
+- **Finding**: One problem a review round names, with an ID such as `R2.1`.
+- **Human round**: A review round by a human, run through the human-review skill.
+- **Review file**: The file that records every review round and human round of one ticket.
+- **Handoff comment**: The PR comment that announces a handoff from agent review to a human and links to the review file.
 - **Status**: The one `status/…` value on a spec or ticket that says who acts next and what they do.
 - **Blocked by** (`blocked_by`): The tickets that must be `status/done` before a ticket can start.
 - **Skill**: A reusable instruction set for agents.

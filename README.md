@@ -7,7 +7,7 @@ while keeping humans in control through **human gates**.
 
 - **Automated lifecycle.** Planning, implementation, review, testing and release
   run as steps in the factory.
-- **Human gates.** Key decisions, such as approving a plan, merging, or
+- **Human gates.** Key decisions, such as approving a spec, merging, or
   releasing, wait for a human to approve them.
 - **Declarative definition.** You describe the factory (its stages, agents and
   gates) declaratively; Fabrik runs it.

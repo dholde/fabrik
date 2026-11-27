@@ -58,6 +58,6 @@ every pull request.
 | Topic | File | Read when |
 |---|---|---|
 | Domain terms | `docs/GLOSSARY.md` | writing specs, tickets or code |
-| Specs, tickets, plans, statuses | `docs/conventions/specs-and-tickets.md` | creating or working on a spec, ticket or plan |
+| Specs, tickets, plans, reviews, statuses | `docs/conventions/specs-and-tickets.md` | creating or working on a spec, ticket, plan or review |
 | Decisions (ADRs) | `docs/adr/README.md` | writing an ADR or questioning a convention |
 | Open decisions and follow-ups | `docs/OPEN.md` | deferring something, or picking up open work |

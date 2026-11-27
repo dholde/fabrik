@@ -19,3 +19,6 @@ One file per decision: `<NNNN>-<slug>.md`, numbered from `0001`.
 | [0002](0002-store-status-in-repo-files.md) | Store spec and ticket status in repo files | accepted |
 | [0003](0003-status-naming.md) | Name statuses `status/<actor>-<action>` | accepted |
 | [0004](0004-split-spec-and-ticket-creation.md) | Split spec and ticket creation | accepted |
+| [0005](0005-review-as-separate-agent.md) | Run review as a separate agent started by its status | accepted |
+| [0006](0006-status-on-ticket-branch.md) | Commit ticket status on the ticket branch | accepted |
+| [0007](0007-review-findings-in-review-file.md) | Keep review findings in a review file | accepted |
