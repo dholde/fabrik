@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  skills:
+    name: Skills
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Claude copy matches .agents/skills
+        run: bash scripts/check-skills.sh copy
+
+  adrs:
+    name: ADRs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: ADR numbers are sequential
+        run: bash scripts/check-adrs.sh numbering
+      - name: ADRs have title, status, date and sections
+        run: bash scripts/check-adrs.sh format
+      - name: Index matches ADR titles and statuses
+        run: bash scripts/check-adrs.sh index
