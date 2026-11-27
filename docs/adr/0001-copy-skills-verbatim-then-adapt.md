@@ -22,7 +22,9 @@ changelog.
 
 ## Consequences
 
-- Every change to a third-party skill is visible as a diff against the original.
+- Every change to a third-party skill can be compared with the original: in
+  the pull request through the separate verbatim commit, and afterwards through
+  the source version pinned in `source.md`. `main` only takes squash merges.
 - `.claude/skills/` must be re-copied after every change to a skill.
 - Everyone who pulls gets the same files on every OS; nothing runs after a pull.
 - Cursor reads both folders and lists each skill twice.

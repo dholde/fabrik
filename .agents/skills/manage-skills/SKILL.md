@@ -29,7 +29,7 @@ Skills live in `.agents/skills/<name>/`. Codex and Cursor read that folder, and 
    - None. Unchanged from source.
    ```
 
-5. **Refresh the Claude copy** (see below) and commit only this skill, with the source repository and the pinned folder URL in the commit message. This verbatim commit makes every later change visible as a diff.
+5. **Refresh the Claude copy** (see below) and commit only this skill, with the source repository and the pinned folder URL in the commit message. In the pull request, this separate commit lets reviewers see the adaptations on their own. After the squash merge, compare against the source version pinned in `source.md`.
 6. **Adapt it** to this repo if needed, in separate commits. For each change, add one line to the `source.md` changelog: what changed and why. Replace "None. Unchanged from source." with the first entry.
 
 ## Change an existing skill
