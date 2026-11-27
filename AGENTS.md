@@ -36,6 +36,8 @@ commands to build, test and lint here.
 - **Change a decision everywhere.** Before changing a convention, search the
   repo for its key terms and update or remove every statement that depends on
   it, in the same change. What cannot be done now goes into `docs/OPEN.md`.
+- **Manage skills with `manage-skills`.** When adding or updating skills,
+  always use the `manage-skills` skill.
 - **Write without AI slop.** Whenever you write (chat replies, docs, specs,
   tickets, ADRs, commit messages, PR descriptions), follow the `no-ai-slop` skill.
 - Keep changes small and focused; one concern per change.
@@ -48,6 +50,5 @@ commands to build, test and lint here.
 | Topic | File | Read when |
 |---|---|---|
 | Domain terms | `docs/GLOSSARY.md` | writing docs or code |
-| Adding or adapting skills | `docs/conventions/skills.md` | adding or changing a skill |
 | Decisions (ADRs) | `docs/adr/README.md` | writing an ADR or questioning a convention |
 | Open decisions and follow-ups | `docs/OPEN.md` | deferring something, or picking up open work |

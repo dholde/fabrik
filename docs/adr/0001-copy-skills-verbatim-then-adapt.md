@@ -10,8 +10,12 @@ and Cursor, can carry security risks, and usually need changes to fit Fabrik.
 
 ## Decision
 
-Each skill is security-checked, copied unchanged into `.claude/skills/<name>/`
-and `.agents/skills/<name>/`, and committed on its own. A `source.md` records
+Each skill is security-checked, copied unchanged into `.agents/skills/<name>/`,
+and committed on its own. That folder is the only place skills are edited.
+Claude Code reads only `.claude/skills/`, so it gets a committed copy of each
+skill, made on the maintainer's machine. It is a copy, not a symlink, because
+Fabrik will be open source and symlinks break on Windows without extra setup.
+A `source.md` records
 the source repository, the skill folder pinned to a commit SHA, and a
 changelog. Adaptations follow in separate commits, each logged in the
 changelog.
@@ -19,5 +23,7 @@ changelog.
 ## Consequences
 
 - Every change to a third-party skill is visible as a diff against the original.
-- Both copies must be kept identical.
+- `.claude/skills/` must be re-copied after every change to a skill.
+- Everyone who pulls gets the same files on every OS; nothing runs after a pull.
+- Cursor reads both folders and lists each skill twice.
 - Updating from the source means repeating the process against the new version.

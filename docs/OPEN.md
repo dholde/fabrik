@@ -8,5 +8,10 @@ Decide with the factory config:
   target repos: which skills, docs and conventions belong to which.
 
 Build with the factory:
-- Consistency checks in CI: both copies of each skill identical, ADR index
-  matches the ADR files.
+- Consistency checks in CI: `.claude/skills/` identical to `.agents/skills/`,
+  ADR index matches the ADR files.
+
+Revisit:
+- Cursor lists each skill twice because it reads `.agents/skills/` and
+  `.claude/skills/`. Drop the `.claude/skills/` copy once Claude Code reads
+  `.agents/skills/`.
