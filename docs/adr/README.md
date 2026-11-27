@@ -14,3 +14,6 @@ One file per decision: `<NNNN>-<slug>.md`, numbered from `0001`.
 | ADR | Title | Status |
 |-----|-------|--------|
 | [0001](0001-copy-skills-verbatim-then-adapt.md) | Copy skills verbatim, then adapt | accepted |
+| [0002](0002-store-status-in-repo-files.md) | Store spec and ticket status in repo files | accepted |
+| [0003](0003-status-naming.md) | Name statuses `status/<actor>-<action>` | accepted |
+| [0004](0004-split-spec-and-ticket-creation.md) | Split spec and ticket creation | accepted |

@@ -47,7 +47,8 @@ commands to build, test and lint here.
 
 | Topic | File | Read when |
 |---|---|---|
-| Domain terms | `docs/GLOSSARY.md` | writing docs or code |
+| Domain terms | `docs/GLOSSARY.md` | writing specs, tickets or code |
+| Specs, tickets, plans, statuses | `docs/conventions/specs-and-tickets.md` | creating or working on a spec, ticket or plan |
 | Adding or adapting skills | `docs/conventions/skills.md` | adding or changing a skill |
 | Decisions (ADRs) | `docs/adr/README.md` | writing an ADR or questioning a convention |
 | Open decisions and follow-ups | `docs/OPEN.md` | deferring something, or picking up open work |
