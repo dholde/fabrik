@@ -57,7 +57,7 @@ Iterate until the user approves the breakdown.
 
 ### 5. Write the tickets
 
-Write the approved tickets, one file per ticket, to the ticket location defined in the specs and tickets conventions, numbered from `01` in dependency order (blockers first). Use the ticket template below: one ticket per file, never a single combined file. Fill the frontmatter as the specs and tickets conventions define it: the starting status for new tickets, `blocked_by` with the numbers of the gating tickets, `spec` linking to the spec, and an empty `plan`. Only write the files: do not commit, push or open a PR.
+Write the approved tickets, one file per ticket, to the ticket location defined in the specs and tickets conventions, numbered from `01` in dependency order (blockers first). Use the ticket template below: one ticket per file, never a single combined file. Fill the frontmatter as the specs and tickets conventions define it: the starting status for new tickets, `blocked_by` with the numbers of the gating tickets, `spec` linking to the spec (empty when there is no spec), and empty `plan` and `review`. Only write the files: do not commit, push or open a PR.
 
 Work the **frontier**: any ticket whose blockers are all done. For a purely linear chain that means top to bottom.
 
@@ -70,6 +70,7 @@ status: <starting status for new tickets, from the specs and tickets conventions
 blocked_by: ["<NN>", ...]
 spec: <relative link to the spec>
 plan:
+review:
 ---
 
 # <NN>: <Ticket title>

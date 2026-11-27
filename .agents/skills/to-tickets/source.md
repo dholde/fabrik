@@ -11,3 +11,4 @@
 - Point to `AGENTS.md` for locations instead of `/setup-matt-pocock-skills`.
 - Forbid modifying the spec instead of a parent issue.
 - Refer to the specs and tickets conventions through the `AGENTS.md` map, after those conventions moved out of `AGENTS.md`.
+- Add the empty `review` link to the ticket frontmatter and allow an empty `spec` for tickets without a spec, after the conventions added review files.
