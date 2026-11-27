@@ -11,7 +11,14 @@ check_copy() {
   return 1
 }
 
-CHECKS=(copy)
+# Adapted skills use Fabrik's statuses, not the upstream ready-for-agent label.
+check_statuses() {
+  grep -rn 'ready-for-agent' .agents/skills --include=SKILL.md || return 0
+  echo "FAIL: ready-for-agent found in a skill. Use the statuses from the specs and tickets conventions."
+  return 1
+}
+
+CHECKS=(copy statuses)
 
 run() {
   local fail=0 c

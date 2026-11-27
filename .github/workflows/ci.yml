@@ -20,6 +20,9 @@ jobs:
       - name: Claude copy matches .agents/skills
         if: ${{ !cancelled() }}
         run: bash scripts/check-skills.sh copy
+      - name: No ready-for-agent in skills
+        if: ${{ !cancelled() }}
+        run: bash scripts/check-skills.sh statuses
 
   adrs:
     name: ADRs
