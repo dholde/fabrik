@@ -3,6 +3,9 @@
 Follow-ups that cannot be done yet. Every deferred item goes here, never only
 into a conversation. Remove an item in the change that resolves it.
 
+**Next:** Design the factory workflow and config. The items under "Decide with
+the factory config" are its agenda.
+
 Decide with the factory config:
 1. Running ticket creation automatically when a spec reaches `status/approved`,
    and how the breakdown gets approved then (e.g. a `status/human-review-tickets`).
