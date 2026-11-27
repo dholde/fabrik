@@ -5,4 +5,4 @@
 
 ## Changelog
 
-- None. Unchanged from source.
+- Ask one open point at a time instead of whole rounds: write the numbered list of open points first, then ask the first, and update the list after each answer.
