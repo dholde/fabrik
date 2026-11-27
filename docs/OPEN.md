@@ -19,11 +19,6 @@ Decide with the factory config:
 - Separate Fabrik's own development tooling from what the factory uses in
   target repos: which skills, docs and conventions belong to which.
 
-Build with the factory:
-- Consistency checks in CI: no `ready-for-agent` in adapted skills,
-  `.claude/skills/` identical to `.agents/skills/`, ADR index matches the ADR
-  files.
-
 Revisit:
 - Cursor lists each skill twice because it reads `.agents/skills/` and
   `.claude/skills/`. Drop the `.claude/skills/` copy once Claude Code reads

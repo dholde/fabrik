@@ -59,4 +59,4 @@ rsync -a --delete .agents/skills/<name>/ .claude/skills/<name>/
 robocopy .agents\skills\<name> .claude\skills\<name> /MIR
 ```
 
-To remove a skill, delete both folders in the same commit.
+To remove a skill, delete both folders in the same commit. `scripts/check-consistency.sh` fails if the two folders differ.
