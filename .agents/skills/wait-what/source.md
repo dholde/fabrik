@@ -5,4 +5,4 @@
 
 ## Changelog
 
-- None. Unchanged from source.
+- Point the glossary to `docs/GLOSSARY.md`, where Fabrik keeps it.
