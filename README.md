@@ -16,11 +16,6 @@ while keeping humans in control through **human gates**.
 
 Early stage. We are designing the factory's structure and definition format.
 
-## Contributing with AI agents
-
-Agent guidance lives in [AGENTS.md](AGENTS.md). [CLAUDE.md](CLAUDE.md) imports
-it for Claude Code.
-
 ## License
 
 See [LICENSE](LICENSE).
