@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  skills:
+    name: Skills
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Claude copy matches .agents/skills
+        if: ${{ !cancelled() }}
+        run: bash scripts/check-skills.sh copy
+
+  adrs:
+    name: ADRs
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: ADR numbers are sequential
+        if: ${{ !cancelled() }}
+        run: bash scripts/check-adrs.sh numbering
+      - name: ADRs have title, status, date and sections
+        if: ${{ !cancelled() }}
+        run: bash scripts/check-adrs.sh format
+      - name: Index matches ADR titles and statuses
+        if: ${{ !cancelled() }}
+        run: bash scripts/check-adrs.sh index

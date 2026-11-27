@@ -1,0 +1,3 @@
+interface:
+  display_name: "/no-ai-slop"
+  short_description: "Writing rules to avoid AI slop."
